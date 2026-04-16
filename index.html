@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +9,12 @@
 body {
   margin: 0;
   height: 100vh;
-  background: url('Language_Selection_Page.png') no-repeat center center;
-  background-size: cover;
+  background: url('Language_Selection_Page.png') no-repeat center center/cover;
   font-family: Arial, sans-serif;
   position: relative;
 }
 
-/* Button container */
+/* Container for buttons */
 .button-container {
   position: absolute;
   bottom: 8%;
@@ -26,7 +24,7 @@ body {
   gap: 20px;
 }
 
-/* Buttons */
+/* Button base */
 .btn {
   padding: 14px 28px;
   font-size: 18px;
@@ -34,19 +32,32 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
+/* Hover effect */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* English button */
 .en {
   background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.6);
 }
 
+/* French button */
 .fr {
   background: linear-gradient(135deg, #15803d, #22c55e);
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
 }
 
-.btn:hover {
-  opacity: 0.9;
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
 }
 </style>
 </head>
