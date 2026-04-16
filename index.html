@@ -1,1 +1,62 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Language</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('Language_Selection_Page.png') no-repeat center center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Button container */
+.button-container {
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.en {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+.fr {
+  background: linear-gradient(135deg, #15803d, #22c55e);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="button-container">
+  <a href="/en/" class="btn en">🇬🇧 English</a>
+  <a href="/fr/" class="btn fr">🇫🇷 Français</a>
+</div>
+
+</body>
+</html>
