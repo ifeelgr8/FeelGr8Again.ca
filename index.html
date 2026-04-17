@@ -4,50 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choose Language</title>
-
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       background: #dfe4ea;
       font-family: Arial, sans-serif;
-      overflow: hidden;
     }
 
     .stage {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      text-align: center;
     }
 
     .hero-image {
+      display: block;
       width: 100%;
-      height: 100%;
-      object-fit: contain;
+      height: auto;
     }
 
     .button-container {
-      position: absolute;
-      bottom: 6%;
-      left: 50%;
-      transform: translateX(-50%);
       display: flex;
+      justify-content: center;
       gap: 20px;
-      width: 90%;
-      max-width: 500px;
+      padding: 28px 20px 36px;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     .btn {
       flex: 1;
       text-align: center;
-      padding: 14px;
+      padding: 16px 20px;
       font-weight: bold;
       text-decoration: none;
       color: white;
-      border-radius: 12px;
+      border-radius: 14px;
       font-size: 18px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     }
@@ -63,7 +58,8 @@
     @media (max-width: 700px) {
       .button-container {
         flex-direction: column;
-        bottom: 4%;
+        padding: 22px 20px 28px;
+        gap: 16px;
       }
 
       .btn {
@@ -76,6 +72,7 @@
 <body>
   <div class="stage">
     <img src="./language-page.png" alt="Feel great again. It starts here." class="hero-image">
+
     <div class="button-container">
       <a href="/en/" class="btn en">🇬🇧 English</a>
       <a href="/fr/" class="btn fr">🇫🇷 Français</a>
